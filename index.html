@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    	<meta name="viewport" content="width=device-width, initial-scale=1">
-    	<!--Meta-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Meta-->
 	<title>Portfolio</title>
 
-	<link rel="icon" href="dist/img/vesaLogo.png" type="image/png" sizes="32x32"> 
+	<link rel="icon" href="img/vesaLogo.png" type="image/png" sizes="32x32"> 
 	<!--Favicon-->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<!--Font Awesome-->
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<!--Bootstrap-->
-	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!--Custom CSS-->
 </head>
 <body>
@@ -260,11 +260,16 @@
 				<div id="ftrField">
 					<h5>Newsletter</h5>
 					<p>On this way, You can to contact me.</p>
-					<p>Send Your email to me.</p>
 		
-					<form class="newsletter" action="http://formspree.io/veselinovic93@hotmail.com" method="POST">
-						<input class="inputEmail" type="email" placeholder="Your Email">
-						<input class="btnSbm" type="submit" name="_replyto" value="Send">
+					<form target="_blank" action="https://formspree.io/veselinovic93@hotmail.com" method="POST">
+						<div class="newsletter">
+							<input class="inputEmail" type="email" name="_replyto" placeholder="Your Email">
+							<input class="btnSbm" type="submit" value="Send">
+						</div>
+						<div class="datas newsletter">
+							<input class="forName" type="text" name="name" placeholder="Your Name / Nickname">
+							<textarea type="text" name="message" placeholder="Your Message"></textarea>
+						</div>	
 					</form>
 				</div>
 			</div>	
